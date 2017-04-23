@@ -97,9 +97,103 @@ textarea {
 
 /*start of common rules*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.desk {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
 /*Enc of common rules*/
 
 /*START OF HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: green;
+}
+
+.header {
+    background-color: #F56B2A;
+    display: flex;
+    height: 100%;
+}
+
+    /*logo*/
+.header figure {
+    width: 140px;
+    margin: auto;
+}
+
+    /*header menu*/
+.header nav {
+    width: auto;
+    margin: auto 10px;
+}
+
+.menu {
+    background-color: white;
+    border-radius: 5px;
+    /*line-height: 50px;*/
+    margin: 5px;
+    padding: 10px 5px;
+    width: auto;
+}
+.menu ul {
+    display: none;
+}
+
+.menu:hover>ul {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+}
+
+.menu:hover>ul, .menu ul li, .menu ul li a, .menu ul li:hover, .menu ul li:hover>a {
+    transition: .5s
+}
+
+.menu ul li {
+    line-height: 60px;
+    background-color: #ccc;
+    border: .1px solid grey;
+}
+
+.menu ul li a {
+    color: #3873bd;
+    margin-left: 10px;
+}
+
+.menu ul li:hover {
+    background-color: white;
+}
+
+.menu ul li:hover>a {
+    color: #f56b2a;
+    text-decoration: none;
+}
+
 
 /*END OF HEADER*/
 
@@ -113,7 +207,7 @@ textarea {
 
 
 /*~~~~~ START OF TABLETTE ~~~~~*/
-@media (min-width: 768px;) {
+@media (min-width: 768px) {
     /*start of common rules*/
 
     /*Enc of common rules*/
@@ -132,12 +226,37 @@ textarea {
 }
 
 /*~~~~~ START OF DESK ~~~~~*/
-@media (min-width: 10224px;) {
+@media (min-width: 1024px) {
     /*start of common rules*/
+
+    .mobil {
+        display: none;
+    }
+
+    .desk {
+        display: block;
+    }
 
     /*Enc of common rules*/
 
     /*START OF HEADER*/
+
+    .header {
+        /*display: flex;*/
+        justify-content: space-between;
+    }
+
+    .header figure {
+        order: -1;
+    }
+
+    .header nav {
+        width: auto;
+    }
+
+    .header nav ul {
+        display: flex;
+    }
 
     /*END OF HEADER*/
 

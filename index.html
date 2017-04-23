@@ -12,6 +12,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -29,16 +30,12 @@
         <header>
 
           <div class="header">
-            <!-- logo -->
-            <figure>
-              <img src="img/logo.svg" alt="logo leboncoin">
-            </figure>
 
             <!-- navigation -->
-            <nav>
-              <ul class="mobil">
-                <li>
-                  <a class="menu" href="#">MENU</a>
+            <nav class="mobil">
+              <ul>
+                <li class="menu">
+                  <a href="#">MENU</a>
                   <ul>
                     <li><a href="index.html">ACCUEIL</a></li>
                     <li><a href="depot.html">D&Eacute;POSER UNE ANNONCE</a></li>
@@ -52,7 +49,9 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="desk">
+            </nav>
+            <nav class="desk">
+              <ul>
                 <li><a href="index.html">ACCUEIL</a><i class="glyphicon glyphicon-triangle-top"></i></li>
                 <li><a href="depot.html">D&Eacute;POSER UNE ANNONCE</a></li>
                 <li><a href="offre.html">OFFRES</a></li>
@@ -62,9 +61,17 @@
               </ul>
             </nav>
 
+            <!-- logo -->
+            <figure>
+              <a href="index.html">
+                <img src="img/logo.svg" alt="logo leboncoin">
+              </a>
+            </figure>
+
+
             <!-- aside -->
             <aside class="desk">
-              <a href="#">Se connecter</a>
+              <a href="#"><i class="fa fa-user-secret"></i>Se connecter</a>
             </aside>
           </div>
 
@@ -82,8 +89,8 @@
             <div>
               <article>
                 <h1>Trouvez la bonne affaire parmi <span class="orange">27 349 476 petites annonces</span> sur leboncoin.</h1>
-                <p class="blueBouton"></p>
-                <p class="whiteBouton"></p>
+                <p class="blueBouton"><i class="fa fa-edit"></i>Déposer une annonce</p>
+                <p class="whiteBouton"><i class="material-icons">my_location</i>Recherher autour de moi</p>
                 <div class="actu">
                   <p class="desk">L'actualité leboncoin</p>
                   <figure>
