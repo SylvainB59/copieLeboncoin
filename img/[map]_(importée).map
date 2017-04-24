@@ -1,0 +1,12 @@
+<img src="[map] (importée)" width="410" height="480" border="0" usemap="#map" />
+
+<map name="img/map.png">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:BaillotSylvain -->
+<area shape="poly" coords="196,34,199,28,198,8,225,0,228,10,244,17,249,29,251,25,260,34,274,36,273,43,279,49,264,48,246,51,224,44,224,39,214,41,207,36,197,35" target="Nord Pas De Calais" href="#" />
+<area shape="poly" coords="191,46,199,41,198,36,207,36,214,41,225,44,246,50,265,48,279,50,271,66,273,78,260,82,262,96,253,104,241,92,233,94,215,87,203,87,203,58,191,46" target="Picardie" href="#" />
+<area shape="poly" coords="191,102,195,93,203,85,203,88,215,87,232,96,242,92,254,103,251,106,257,113,255,125,242,126,240,134,232,134,225,137,222,126,210,130,204,120,195,115,197,103" target="Ile De France" href="#" />
+</map>
