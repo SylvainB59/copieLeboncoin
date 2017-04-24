@@ -103,6 +103,10 @@ textarea {
     font-family: "OpenSansSemiBold",sans-serif;
 }
 
+body {
+    background-color: #fafafa;
+}
+
 .desk {
     display: none;
 }
@@ -210,6 +214,10 @@ section {
     text-align: center;
 }
 
+.mainSection {
+    margin: auto 10px;
+}
+
 h1 {
     font-size: 14px;
 }
@@ -231,19 +239,54 @@ h1 {
 }
 
 .blueBouton {
+    background-color: #3873bd;
+}
+
+.blueBouton a {
     color: white;
+}
+
+.blueBouton:hover {
     background-color: #4c94ef;
+    transition: .5s;
 }
 
 .whiteBouton {
     color: #4c94ef;
-    border: 1px solid #4c94ef;
+    border: 1px solid #4183d7;
+}
+
+.whiteBouton:hover {
+    background-color: #4c94ff;
 }
 
 .carte {
     margin: 10px;
 }
 
+.region {
+    border: 1px solid;
+    border-radius: 4px;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.region ul {
+    display: none;
+}
+
+.region:hover>ul {
+    display: block;
+    position: absolute;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+    /*h2*/
+
+h2 {
+    font-size: .9em;
+}
 
 
 /*END OF SECTION*/
@@ -362,18 +405,69 @@ h1 {
 
     /*START OF SECTION*/
 
+    section {
+        margin: 70px 100px;
+    }
+
     .mainSection {
         display: flex;
-        margin: 0 100px;
+        justify-content: space-between;
     }
 
     .ssSection {
         display: flex;
     }
 
-    .region {
-        text-align: right;
+    .ssSection article {
+        width: 350px;
     }
+
+    h1 {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .ssSection figure {
+        margin-left: 20px;
+    }
+
+    .actu {
+        border: 1px solid grey;
+        color: white;
+    }
+
+    .actu p {
+        background-color: grey;
+        line-height: 50px;
+    }
+
+    .blueBouton, .whiteBouton {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+        /*nav section*/
+
+    .region {
+        border: none;
+        text-align: right;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .region a {
+        color: #369;
+    }
+
+    .region a:hover {
+        color: #f56b2a;
+        text-decoration: none;
+    }
+
+    .domtom {
+        margin-top: 5px;
+    }
+
 
 
     /*END OF SECTION*/
