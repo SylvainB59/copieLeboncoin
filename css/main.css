@@ -297,25 +297,40 @@ h2 {
 
 footer {
     /*height: 75px;*/
-    background-color: #2a2a2a;
 }
 
 footer section {
     color: white;
     height: 100%;
+    /*margin: 0 100px*/
+}
+
+.footer2 {
+    background-color: #474747;
 }
 
 .mobilFooter {
     display: flex;
     justify-content: space-between;
-    line-height: 65px;
-    margin: auto 10px;
+    height: 75px;
+    /*line-height: 65px;*/
 }
 
+.mobilFooter p {
+    margin: auto 10px;
+    vertical-align: center;
+}
+
+.social {
+    display: flex;
+    height: 100%;
+}
 
 .facebook, .twitter {
+    margin: 20px 10px;
     color: white;
     border-radius: 4px;
+    /*margin-right: 10px;*/
 }
 
 .facebook {
@@ -509,6 +524,94 @@ footer section {
 
     /*START OF FOOTER*/
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: .9em;
+    }
+
+        /*footer 1*/
+
+    .footer1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+        margin-bottom: 0;
+    }
+
+    .footer1 ul {
+        width: 24%;
+        text-align: left;
+        margin: 0 5px;
+    }
+
+    .title {
+        border-bottom: 1px lightgrey solid;
+        margin: 10px auto;
+        font-weight: bold;
+    }
+
+        /*footer 2*/
+
+    .footer2 {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .navFooter {
+        display: flex;
+        line-height: 2.5;
+    }
+
+    .navFooter nav {
+        width: 23%;
+        margin: 0 5px;
+        text-align: left;
+    }
+
+    .navFooter a {
+        color: white;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: bold;
+        border-bottom: 1px grey solid;
+        padding-bottom: 5px;
+    }
+
+    .apps {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .apps figure {
+        height: 35px;
+    }
+
+    .apps img {
+        max-height: 100%
+    }
+
+    .partenaire {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        border-bottom: 1px grey solid;
+        border-top: 1px grey solid;
+    }
+
+    .partenaire a {
+        color: white;
+    }
+
+    .social {
+        display: flex;
+    }
+
+
+
+
     /*END OF FOOTER*/
 }
 
@@ -546,7 +649,7 @@ footer section {
 }
 
 /*
- * Extends the .visuallyhidden class to allow the element
+ * Extends the .visuallyhidden lass to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
