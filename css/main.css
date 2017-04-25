@@ -358,6 +358,10 @@ footer section {
 
     /*START OF SECTION*/
 
+    .mainSection .fa-edit, .mainSection .mi-geoloc {
+        display: block;
+    }
+
     /*END OF SECTION*/
 
     /*START OF FOOTER*/
